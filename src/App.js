@@ -32,12 +32,6 @@ export default class App extends Component {
     }
   }
 
-  /*changeStateData = () => {
-    this.setState({
-      userName: this.state.userName === "Vasyl" ? "Vasko" : "Vasyl"
-    })
-  }*/
-
   toggleTodo = (todo) => this.setState({ todoItems:
       this.state.todoItems.map(item => item.action === todo.action
           ? { ...item, done: !item.done} : item) });
